@@ -11,15 +11,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
 
 import com.virtusa.service.impl.NumDispenseChain;
 
 @EnableAutoConfiguration
 @SpringBootApplication
-@Configuration
-@ComponentScan("{com.virtusa}")
 public class NumberToWordConverterApplication {
 
 	 @Autowired
@@ -46,6 +42,5 @@ public class NumberToWordConverterApplication {
 			 	
 		 numDispenseChain.sConfig().c1.dispense(num);
 		
-	}
-	
+	}	
 }

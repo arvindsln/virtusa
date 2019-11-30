@@ -12,8 +12,8 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
-import org.junit.After;
-import org.junit.Before;
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -23,8 +23,8 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootTest
 public class NumberToWordConverterApplicationTests {
 
-	@Before
-	public void setUp(){	
+	@BeforeClass
+	public static void setUp(){	
 	}
 	
 	@Test
@@ -62,8 +62,8 @@ public class NumberToWordConverterApplicationTests {
 		assertTrue(isValid(NINE_THOUSAND_NINE_HUNDRED_NINE.getValue())); 
 	}
 		
-	@After
-	public void tearDown(){	
+	@AfterClass
+	public static void tearDown(){	
 	}
 
 }
